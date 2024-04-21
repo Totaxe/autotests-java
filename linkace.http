@@ -1,0 +1,24 @@
+@baseUrl = http://192.168.0.157/api/v1
+@token = nJYcJ2BMagP1vx7saZiUAROUjLwTORR0
+
+###
+
+# Get all links
+GET {{baseUrl}}/links
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+# Create new link
+POST {{baseUrl}}/links
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "url": "https://reddit.com",
+    "title": "Reddit",
+    "description": "Dive into anything"
+}
